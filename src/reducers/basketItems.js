@@ -24,7 +24,6 @@ const basketItem = (state, action) => {
 const basketItems = (state = [], action) => {
   switch (action.type) {
     case actionTypes.RECEIVE_BASKET: {
-      console.log(state, action);
       return [...state, action.basketItems];
     }
 
